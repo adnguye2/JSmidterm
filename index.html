@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Interest Calculator</title>
+  <link rel="stylesheet" href="main.css" />
+</head>
+
+<body>
+  <main>
+    <h1>Interest Calculator</h1>
+    <label for="loanAmount">Enter loan amount ($):</label>
+    <input type="text" id="loanAmount" />
+    <br />
+    <label for="interestRate">Enter interest rate (%):</label>
+    <input type="text" id="interestRate" />
+    <br />
+    <button id="calculateButton">Calculate Interest</button>
+    <div id="results">
+      <table id="interestTable">
+        <thead>
+          <tr>
+            <th>AMOUNT ($)</th>
+            <th>RATE (%)</th>
+            <th>INTEREST ($)</th>
+          </tr>
+        </thead>
+        <tbody id="tableBody"></tbody>
+      </table>
+    </div>
+  </main>
+
+  <script src="interest_calculator.js"></script>
+</body>
+
+</html>
